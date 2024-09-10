@@ -103,7 +103,52 @@ Always keep present that_
 
 To check our first example, you can go to the [index.html](/frontend_developer_course/practice/01_intro_to_html/index.html) file in the directory **01_intro_to_html** present in the practice directory that is where we will put the examples we do during the course.
 
-## -
+Remeber that you can create files from the terminal by using the **touch** command:
+
+```bash
+touch <filename>
+```
+
+One trick that can save you a lot of time when using HTML, is to use the snippets or emmets, for example, if you have enabled the **HTML Extensions** in VS Code, you can add *HTML:5* and it will create a template for you.
+
+![HTML5_emmet](/frontend_developer_course/resources/html_5_emmet.png)
+
+## Semantic HTML
+
+It refers to tags  with meaning, which allow your website to be more accessible, improve the SEO positioning and have a clearer code.
+
+Remember that you have to use the proper tags, for example, do not use a ```<div>``` to create a header, and instaed use a ```<header>```.
+
+## Most used tags
 
 Let's make a brief overview of commonly used tags:
 
+- **Layouts:** It talks about the general design and structure of the webpage.
+    - ```<header>``` : For the start of the document.
+    - ```<nav>``` : Navigation bar
+    - ```<section>``` : Divide in sections.
+    - ```<article>``` : Related to articles.
+    - ```<aside>```
+    - ```<footer>``` : For the last part.
+- **Links:** For URLs and other link resources.
+    - ```<a>``` : Links for redirection
+- **Texts:** 
+    - ```<h1>...<h6>``` : You can go from h1 up to h6, no more. It should related importance.
+    - ```<p>``` : Paragraphs
+    - ```<span>``` : Helps for formatting inside a paragraph.
+- **Resources:** 
+    - ```<img>``` : Add images.
+    - ```<svg>``` : For vectorized images.
+    - ```<ifram>e``` : For videos.
+    - ```<video>``` : Also for videos
+- **Forms:**
+    - ```<form>``` : Forms
+    - ```<input>``` : User input of different types.
+    - ```<label>``` : Inital texto for what to do in the interaction.
+    - ```<button>``` : For simple interaction of clic
+- **Lists:**
+    - ```<ul>``` : Specify a list encapsulation
+    - ```<il>``` : Add item to list
+    - ```<ol>``` : Ordered item.
+
+For a more detailed and clearer reference, you can check the amazing guide offered by [htmlreference.io](https://htmlreference.io/).
