@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Example of descendent, in this case p that descends of div */
+        div p{
+            color: darkred;
+        }
+        /* Example of direct child, in this case div direct of div */
+        div > div {
+            background: coral;
+        }
+        /* Remeber the use of selectors by considering classes*/
+        .es {
+            background: darkorange;
+        }
+        /* For adjacent elements, in this case a section after a div*/
+        div + section {
+            background: palegreen;
+        }
+        /* For general of brothers, in this case with a div and a paragraph*/
+        div ~ p {
+            color: powderblue;
+        }
+    </style>
+</head>
+<body>
+    <!-- Here is the part for our experiments-->
+    <div>
+        <p>I am inside one div</p>
+        <div>
+            <p>This is a paragraph</p>
+            <p>This is also a paragraph</p>
+            <div class="es">
+                <p>Is this inside ,multiple divs?</p>
+            </div>
+        </div>
+        <p>Element after a div</p>
+    </div>
+    <section>
+        Section after a Div
+    </section>
+
+    
+</body>
+</html>

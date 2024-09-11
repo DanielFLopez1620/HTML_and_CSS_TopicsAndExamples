@@ -152,3 +152,49 @@ Let's make a brief overview of commonly used tags:
     - ```<ol>``` : Ordered item.
 
 For a more detailed and clearer reference, you can check the amazing guide offered by [htmlreference.io](https://htmlreference.io/).
+
+# CSS:
+
+## Brief notes on CSS usage:
+
+The basic structure is presented below:
+
+```CSS
+h1 {
+    color : green;
+}
+```
+
+In the previous example, we have to keep in mind the next:
+
+- ```h1``` : It is the selector, it allows the communication with HTML, by specifying which part to give format
+- ```{}```: It is where the CSS Code goes to format the specified element.
+- ```color: ``` : In this case, it is a property.
+- ```green;``` : It corresponds to a property's value.
+
+## Anatomy of a selector:
+
+### Basic Selectors:
+
+First, let's mention the basic selectors, which are:
+
+- **Of type:** ```div{...}``` -> Allows style of HTML tags.
+- **Of class:** ```.element{...}``` -> Centered on objects from certain classes.
+- **Of ID:** ```#element_id``` -> For editing the elements with the corresponding ID.
+- **Of attribute:** ```a[href=""]{...}``` -> Modifications related to an attribute.
+- **Universal:** ```*{...}``` -> Warning, modify everything.
+
+You can check an example of this inside the file [selectors_p1.html](/frontend_developer_course/practice/04_intro_to_selectors_in_css/basis_selectors.html) inside the directory of the practice four, the CSS code is located inside the ```<style>``` tags.
+
+If you want to explore what colors you can use, you can go to the [HTML Color Codes](https://htmlcolorcodes.com/)
+
+### Combination selectors:
+
+Another type of selectors are the ones for combination, which are:
+
+- **Descendent:** ```div p```
+- **Direct child:** ```div > p```
+- **Adjacent element:** ```div + p```
+- **General of brothers:** ```div ~ p ```
+
+The usage of them, is shown in the file [selectos_p2.html](/frontend_developer_course/practice/05_combinator_selectors_css/comb_selectors.html) in the forlder of the practice number five.
