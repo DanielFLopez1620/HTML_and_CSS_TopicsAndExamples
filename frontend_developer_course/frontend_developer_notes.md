@@ -240,3 +240,16 @@ Considering the previous information, if we have the next declaration:
 In one hand, it would mean that we have a value of 100 (id) + 1 (h1) + 1 (::first-letter) to result in 102 and, on the other hand, we would have a value of 1 (p) + 10 (.sidemenu) + 1 (div) + (:hover) to result in 22. Therefore, the first one is more specific.
 
 If the previous paragraph, sound like poetry to you, yoo should check the practice 7 with the file [cascades.html](/frontend_developer_course/practice/07_cascades_in_css/cascades.html).
+
+## Display types:
+
+It refers for the visualization type of the HTML elements, it can be in **block**, **inline**, **inline-block**, **flex** and **grid**.
+
+Do not forget to check which command support inline or block, with the [HTML-Reference](https://htmlreference.io/).
+
+You can check an example about block, inline and block-inline in the code [block_inlines.html](/frontend_developer_course/practice/08_block_inlines_in_css/blocks_inlines.html) in the directory of the practice 8.
+
+In the case of flex you can watch a brief example in the file [flex_grid.html](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) in the practice 9 directory. If you want to learn more, you can consider going to the [CSS Flexbox Layot Guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/ by CSS Tricks).
+
+https://css-tricks.com/snippets/css/complete-guide-grid/
+

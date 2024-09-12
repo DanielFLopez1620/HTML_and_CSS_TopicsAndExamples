@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .father {
+            display: flex;
+            background: salmon;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            flex-direction: column;
+        }
+        .child {
+            width: 50px;
+            height: 20px;
+            background: orange;
+        }
+
+        .father .child:nth-child(2n + 1)
+        {
+            background: orangered;
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="child">Ch1</div>
+        <div class="child">Ch2</div>
+        <div class="child">Ch3</div>
+        <div class="child">Ch4</div>
+        <div class="child">Ch5</div>
+    </div>
+    
+</body>
+</html>
