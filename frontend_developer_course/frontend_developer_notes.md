@@ -198,3 +198,45 @@ Another type of selectors are the ones for combination, which are:
 - **General of brothers:** ```div ~ p ```
 
 The usage of them, is shown in the file [selectos_p2.html](/frontend_developer_course/practice/05_combinator_selectors_css/comb_selectors.html) in the forlder of the practice number five.
+
+## Pseudoclass and pseudoelements selectors:
+
+They related with the actions an user make with the web site, for example, clic to a button, let's mention some of them:
+
+- **Pseudoclass:**
+    - ```:active``` : For active buttons
+    - ```:hover``` : Related with mouse operations over images, text and buttons.
+    - ```:nth-child(n)``` : Allow access for HTML elements.
+    - ```:foucs``` : 
+- **Pseudoelements:**
+    - ```::after``` : Add something after a certain element, for example, an emoticon.
+    - ```::before``` : Add something before a certain element, for example, an emoji or a text.
+    - ```::first-letter``` For style of the first letter of praragraphs or related.
+    - ```::placeholder``` : For text manipulation.
+
+For examples, on this, go and check the [pseudo_selectors](/frontend_developer_course/practice/06_pseudo_selectors_in_css/pseudo_selectors.html) file in the practice number 6.
+
+## Cascade and specificity:
+
+The order of the rules matters, you should follow the cascade to determinate the output of the formatting. Also, sometimes, the web browser may not understand some rules you apply, therefore, you should be specific in the selectors you are using.
+
+How to know which selector is more specific and important? Well, consider the next rules in the order from high priority to low priority.
+
+1. ! Important. (x0000 value)
+2. Line styles. (x000 value)
+3. Id number. (x00 value)
+4. Classes, attributes and pseudoclasses. (x0 value)
+5. Elements and pseudoelements. (x value)
+6. Universal selector. (0 value)
+
+Considering the previous information, if we have the next declaration:
+
+```CSS
+#id h1::first-letter
+...
+#p .sidemenu div:hover
+```
+
+In one hand, it would mean that we have a value of 100 (id) + 1 (h1) + 1 (::first-letter) to result in 102 and, on the other hand, we would have a value of 1 (p) + 10 (.sidemenu) + 1 (div) + (:hover) to result in 22. Therefore, the first one is more specific.
+
+If the previous paragraph, sound like poetry to you, yoo should check the practice 7 with the file [cascades.html](/frontend_developer_course/practice/07_cascades_in_css/cascades.html).

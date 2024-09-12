@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*---------------- CASCADE CONSIDERATIONS -----------------------------*/
+        /*  This h1 red will be overwritten */
+        h1 {
+            color: red
+        }
+
+        /* As the cascade goes on, later instructions will replaces old ones*/
+        h1 {
+            color:blue
+            
+        }
+
+        /* ------------------- SPECIFICITY ----------------------------------*/
+        /* This one is less specific */
+        #platzi {
+            color:green;
+        }
+        /* This one is more specific */
+        .generic {
+            color:olive
+        }
+    </style>
+</head>
+<body>
+    <h1> A normal WebPage</h1>
+    <div id="my_div" class="generic">Hola, aquí un div</div>
+</body>
+</html>

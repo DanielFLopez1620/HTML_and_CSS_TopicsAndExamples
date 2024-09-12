@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Change style of paragraphs */
+        p {
+            color:greenyellow;
+        }
+
+        /* Change the first letter of an array */
+        p::first-letter{
+            color:green;
+        }
+
+        /* Add elements before and after of an element*/
+        p::before {
+            content: "🇨🇴";
+        }
+
+        p::after{
+            content: "💻";
+        }
+
+        /* Add change of color when passing mouse */
+        p:hover {
+            color: rebeccapurple;
+        }
+
+        /* Change color to the second child a sequence of paragraphs */
+        div p:nth-child(2){
+            color:palegreen;
+        }
+        
+        ::placeholder{
+            color:olivedrab;
+        }
+    </style>
+</head>
+<body>
+    <p> Hello World Again!</p>
+    <div>
+        <p>This is a HTML/CSS Code</p>
+        <p>Check the MD file</p>
+        <p>To learn more</p>
+    </div>
+    <input type="text" placeholder="name">
+</body>
+</html>
