@@ -249,7 +249,28 @@ Do not forget to check which command support inline or block, with the [HTML-Ref
 
 You can check an example about block, inline and block-inline in the code [block_inlines.html](/frontend_developer_course/practice/08_block_inlines_in_css/blocks_inlines.html) in the directory of the practice 8.
 
-In the case of flex you can watch a brief example in the file [flex_grid.html](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) in the practice 9 directory. If you want to learn more, you can consider going to the [CSS Flexbox Layot Guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/ by CSS Tricks).
+In the case of flex you can watch a brief example in the file [flex.html](/frontend_developer_course/practice/09_flex_css/flex.html) in the practice 9 directory. If you want to learn more, you can consider going to the [CSS Flexbox Layout Guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) by CSS Tricks.
 
-https://css-tricks.com/snippets/css/complete-guide-grid/
+In the case of grid, you can watch a frief example in the file [grid.html](/frontend_developer_course/practice/10_grid_css/grid.html) in the practice 10 directory. If you are curious about them, you can learn more in [CSS Grid Layout Guide](https://css-tricks.com/snippets/css/complete-guide-grid/) by CSS Tricks.
+
+## The Box Model:
+
+When using **F12** with your web browser, have you checked the boxes display in the style part:
+
+![box_example](/frontend_developer_course/resources/box_model_example.png)
+
+Well, as you have watched, when we have CSS elements, they are mostly represented by boxes, those boxes has different properties which are **content**, **padding**, **border** and **margin**.
+
+Try checking out this properties with a text in your HTML file, for example:
+
+![content of awesom title](/frontend_developer_course/resources/box_model_content.png)
+![margin of awesom title](/frontend_developer_course/resources/box_model_margin.png)
+
+For more experimentation, you can go to the file [boxes.html](/frontend_developer_course/practice/11_boxes_in_css/boxes.html) and play in the web browser.
+
+Keep in mind that when we have margin for adjacent blocks, they may overlap. However when we use flexbox, grid and element that aren't blocks, the margins won't overlap, you can check the example (and do not forget to interact with **F12**) in the case of the code [margins.html](/frontend_developer_course/practice/12_margins_in_css/margins.html).
+
+## Positioning:
+
+for a better display, you do not want to always display adjacent elements, in those cases you can position your content in relative, absolute, fixed, sticky, static, initial and inherital way.
 
