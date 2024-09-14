@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            position: absolute;
+            background:cornflowerblue;
+        }
+        /* Experiment with the Z Index here in terms of superposition*/
+        .One{
+            z-index: 6;
+        }
+        .Two{
+            z-index: 7;
+        }
+        /* Experiment with the Z index here for a more colorful way*/
+        .E1{
+            width: 350px;
+            height: 200px;
+            background: orange;
+            z-index: 6;
+            top: 40px;
+        }
+        .E2{
+            width: 300px;
+            height: 150px;
+            background: yellowgreen;
+            z-index: 6;
+        }
+        .E3{
+            width: 250px;
+            height: 100px;
+            background: yellow;
+            z-index: 7;
+        }
+    </style>
+</head>
+<body>
+    <div class="One"> First text </div>
+    <div class="Two"> Second text </div>
+
+    <section>
+        <div class="E1"> Element 1</div>
+        <div class="E2"> Element 2
+            <div class="E3"> Element 3</div>
+        </div>
+    </section>
+</body>
+</html>

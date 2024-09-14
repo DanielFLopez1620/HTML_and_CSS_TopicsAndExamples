@@ -274,3 +274,37 @@ Keep in mind that when we have margin for adjacent blocks, they may overlap. How
 
 for a better display, you do not want to always display adjacent elements, in those cases you can position your content in relative, absolute, fixed, sticky, static, initial and inherital way.
 
+You can watch an edxample with some of them in the [positioning.html](/frontend_developer_course/practice/13_positioning_css/positioning.html) file, of the practice 13. In this case, you may need to expermient a lot to understand them better.
+
+### Z Index: 
+
+Another important positioning is related with the fictional axis taht points to you, according to layers that may pose over, for example, commercials or logins. 
+
+Originally, when you define the HTML, you create a layer order, but you can edit the **z-index** property for certain position types for improving the leayer distribution in your web page.
+
+Here you should also consider the nested structures and parent structures, as initially a child cannot overlap its parent.
+
+Go and checkout the example [z_index.html](/frontend_developer_course/practice/14_z_index_in_css/z_index.html) to learn and experiment more about the **z-index**.
+
+## Most common properties in CSS:
+
+Let's present a summary about what we have done with CSS, which are:
+
+- **Layout:** Desgin orientations.
+    - **Display:** For types of display box, inline, block-inline, grid and flex.
+- **Text:** 
+    - **font-size:** Letter size.
+    - **font-weight:** Letter thickness.
+    - **font-family:** Type of letter
+    - **text-align:** Left, right, center, justified...
+    - **color:** To add your style
+- **Box Model:**
+    - **margin:** External margin.
+    - **padding:** Intern margin for content
+    - **border:** Related with border color, size, thickness and style properties.
+- **Background:**
+    - **background:** For unified applied brackground color.
+    - **background-color:** Another alternative for setting up the color.
+- **Size:** 
+    - **width:** In pixels.
+    - **height:** In pixels. 
