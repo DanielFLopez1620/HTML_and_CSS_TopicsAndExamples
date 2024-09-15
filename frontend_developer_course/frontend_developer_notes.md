@@ -6,9 +6,10 @@ Fronend refers to what you see in a web page, it talks about the structure and a
 
 - **CSS** stands for Cascading Style Sheets and it will comes for appearance, in other words, the color, sizes, locations and more.
 
-One of your best friends during this selection will be the Inspection option in your web browser (Chrome, Firefox, Brave...), which can be accessed with **F12**:
+One of your best friends during these lessons will be the Inspection option in your web browser (Chrome, Firefox, Brave...), which can be accessed with **F12**:
 
 ![inspection_overview](/frontend_developer_course/resources/inspection_overview.png)
+
 
 Also, before we start coding you will need to learn about the rendering engines, which is the tool inside the web browser that allows to convert the code to a form that understand the application and then display it in screen. Let's check some options:
 
@@ -28,7 +29,18 @@ Everyone make a list of steps to achieve the visualization you see usually in a 
 4. Paint the different boxes and parts
 5. Take all the lyers and convert them in a single image for the screen.
 
-TODO: Add image of allegory of HTML/CSS 
+When thinking about web programming, you can remember the next image to relate HTML, CSS and JS:
+
+![Comparison HTML/CSS/JS](https://media.licdn.com/dms/image/v2/D5612AQGvsUSedZ4U3g/article-inline_image-shrink_1000_1488/article-inline_image-shrink_1000_1488/0/1705513570360?e=1731542400&v=beta&t=ym3PFCpBO16Z4m6BHPD3RYlJAcWhJ4rXgdq6dcXbNBE)
+
+
+NOTE: All the codes presented here can be used for experimentation and illustration of the topics mentioned, to watch the result open the files in your web browser by pasing the absolute path to the file of interest:
+
+```
+file:///home/<user>/<path>/<to>/<repo>/frontend_developer_course/practice/16_metric_units_in_css/metric_units.html
+```
+
+All the codes presented were tested in the [Brave Browser](https://brave.com/), but they will work in other web browsers.
 
 # HTML:
 
@@ -308,3 +320,30 @@ Let's present a summary about what we have done with CSS, which are:
 - **Size:** 
     - **width:** In pixels.
     - **height:** In pixels. 
+
+## Measure units:
+
+How does the web browser knows the size of the elements? During the practices we have made, we have focused on using just pixels and percentage of the screen, but there are more.
+
+They can be:
+
+- **Absolute:** They do not depend on others, like pixels (*px*), (*pt*), (*pc*), inches (*in*), centimeters (*cm*), milimeters (*mm*).
+- **Relative:** They depend on the screen/tab or relatateds *rem*, *em*, *vw* (view width), *vh* (view height), *vmin*, *vmax*, *ex*, *ch*.
+
+To check the most used ones, go to the [metric_units.html](/frontend_developer_course/practice/16_metric_units_in_css/metric_units.html) file of the practice 16 and explore the sizes used.
+
+## Responsive design:
+
+This topic is related in how to make a website look fine in multiple platforms, for example, PC, tablet and smartphone.
+
+We can do this with Media Queries, that follow the next structure:
+
+```CSS
+@media (max-width:375px){
+    .class {
+        update: value
+    }
+}
+```
+
+Go to the file [responsive.html](/frontend_developer_course/practice/17_responsive_design_in_css/responsive.html) and experimentate with the size of the screen, also, you can (in the inspection mode with F12) change the pixel size of your screen if you do not want to do it with the cursor.
