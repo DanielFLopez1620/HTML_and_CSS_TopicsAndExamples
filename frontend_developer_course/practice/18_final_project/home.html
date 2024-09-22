@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G-Mov-Interface</title>
+    <style>
+        header {
+            position: absolute;
+            top: 0px;
+            width: 100%;
+            margin: 0px;
+            height: 15vh;
+            background: orange;
+            border-bottom: 4px;
+            border-color: black;
+            border-style: none none solid none;
+            line-height: 40px;
+            text-align: center;
+        }
+        
+        section {
+            background: orange;
+            border-color: orange;
+            border-style: solid;
+            border-radius: 2vh;
+        }
+
+        .image_vis 
+        {
+            height: 52vh;
+            width: 45vw;
+        }
+
+        .status_vis
+        {
+            height: 20vh;
+            width: 45vw;
+        }
+
+        h1 {
+            font-size: 4em;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: whitesmoke;
+        }
+
+        h2 {
+            font-size: 2em;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: whitesmoke
+        }
+        
+        .flex_container {
+            display: flex;
+            position: absolute;
+            top: 20vh;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <header> <h1> G-Mov Monitoring </h1> </header>
+    <div class="flex_container">
+        <section class="image_vis" id="map" >
+            <h2> Map Perspective: </h2>
+        </section>
+        <section class="image_vis" id="camara">
+            <h2> Camara View: </h2>
+        </section>
+        <section class="status_vis" id="select_map">
+            <h2> Selected Map: </h2>
+        </section>
+        <section class="status_vis" id="person">
+            <h2> Person State</h2>
+        </section>
+    </div>
+</body>
+</html>
