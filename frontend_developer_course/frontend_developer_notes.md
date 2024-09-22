@@ -347,3 +347,38 @@ We can do this with Media Queries, that follow the next structure:
 ```
 
 Go to the file [responsive.html](/frontend_developer_course/practice/17_responsive_design_in_css/responsive.html) and experimentate with the size of the screen, also, you can (in the inspection mode with F12) change the pixel size of your screen if you do not want to do it with the cursor.
+
+
+## CSS Architectures:
+
+They are required for achieving certain objectives like:
+
+- Be predictable.
+- Re-usable.
+- Maintainable.
+- Scalable.
+
+They also allow good practices, for that are related with:
+
+- Guidelines.
+- Documentation.
+- Standards.
+- Components.
+
+Some of the methodologies used are:
+
+- **OOSCC:** Object Oriented CSS which aims to separate the skin from the structure, in other words, it search to plan a base object which you later apply a mask for visual elements.
+- **BEM:** It is oriented to element, modifier and block.
+- **SMACSS:** It comes from the combination of base + layouts + module + state + theme.
+- **ITCSS:** Inverted triangle of CSS, which is oriented to three fields (magnitude, specificity and clarity) to cover the aspects of adjustments, tools, generic, elements, objects, components and utilities.
+- **Atomic Design:** Defined in term of atomic items that are later organized in molecules, and after that in organism to create templates and webpages.
+
+If you want to learn more about this topic you an check the following links:
+
+- [How to organize your CSS with a Modular Architecture (OOCSS, BEM, SMACSS) | Snipchart](https://snipcart.com/blog/organize-css-modular-architecture)
+
+- [CSS Architecture Style Guides For Frontend Developers | Hackernoon](https://hackernoon.com/css-architecture-style-guides-for-frontend-developers-lj28332a)
+
+- [BEM | Platzi Blog](https://platzi.com/blog/bem/)
+
+
