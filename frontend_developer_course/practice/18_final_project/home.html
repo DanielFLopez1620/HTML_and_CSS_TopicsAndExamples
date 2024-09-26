@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>G-Mov-Interface</title>
     <style>
+
         header {
             position: absolute;
             top: 0px;
@@ -30,13 +31,49 @@
         {
             height: 52vh;
             width: 45vw;
+            line-height: 10px;
+        }
+
+        .image_vis_white
+        {
+            height: 40vh;
+            width: 40vw;
+            background: whitesmoke;
+            border-radius: 20px;
+            position: relative;
+            left: 2.5vw;
+            overflow: hidden;
+        }
+        
+        .map
+        {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 90%;
+            max-height: 90%;
+            max-height: 100%;
+            border-radius: 10px;
         }
 
         .status_vis
         {
             height: 20vh;
             width: 45vw;
+            line-height: 10px;
         }
+
+        .status_vis_white
+        {
+            height: 10vh;
+            width: 40vw;
+            background: whitesmoke;
+            border-radius: 20px;
+            position: relative;
+            left: 2.5vw;
+        }
+
 
         h1 {
             font-size: 4em;
@@ -47,7 +84,7 @@
         h2 {
             font-size: 2em;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
-            color: whitesmoke
+            color: whitesmoke;
         }
         
         .flex_container {
@@ -57,6 +94,7 @@
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-around;
+            align-items: center;
             gap: 20px 10px;
         }
 
@@ -67,15 +105,27 @@
     <div class="flex_container">
         <section class="image_vis" id="map" >
             <h2> Map Perspective: </h2>
+            <div class="image_vis_white">
+                <img class="map" src="https://sifrobot.com/wp-content/uploads/2020/03/Simultaneous-Localization-and-Mapping-SLAM.png" alt="SifRobot SLAM">
+            </div>
         </section>
         <section class="image_vis" id="camara">
             <h2> Camara View: </h2>
+            <div class="image_vis_white">
+                <img class="map" src="https://www.homecareassistanceroseville.com/wp-content/uploads/2019/12/Results-of-Falling.jpg" alt="Adult Falling">
+            </div>
         </section>
         <section class="status_vis" id="select_map">
             <h2> Selected Map: </h2>
+            <div class="status_vis_white">
+
+            </div>
         </section>
         <section class="status_vis" id="person">
             <h2> Person State</h2>
+            <div class="status_vis_white">
+
+            </div>
         </section>
     </div>
 </body>
