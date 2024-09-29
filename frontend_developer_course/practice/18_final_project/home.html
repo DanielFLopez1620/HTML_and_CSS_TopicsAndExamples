@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>G-Mov-Interface</title>
     <style>
+        
+        h1 {
+            font-size: 4em;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: whitesmoke;
+        }
+
+        h2 {
+            font-size: 2em;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: whitesmoke;
+        }
 
         header {
             position: absolute;
@@ -53,8 +65,7 @@
             transform: translate(-50%, -50%);
             max-width: 90%;
             max-height: 90%;
-            max-height: 100%;
-            border-radius: 10px;
+            border-radius: 20px;
         }
 
         .status_vis
@@ -72,21 +83,15 @@
             border-radius: 20px;
             position: relative;
             left: 2.5vw;
+            text-align: center;
         }
 
-
-        h1 {
-            font-size: 4em;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            color: whitesmoke;
+        .status_vis_white > h2
+        {
+            color: black;
+            line-height: 85px;
         }
 
-        h2 {
-            font-size: 2em;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            color: whitesmoke;
-        }
-        
         .flex_container {
             display: flex;
             position: absolute;
@@ -118,13 +123,13 @@
         <section class="status_vis" id="select_map">
             <h2> Selected Map: </h2>
             <div class="status_vis_white">
-
+                <h2>aparment_p1.pgm</h2>
             </div>
         </section>
         <section class="status_vis" id="person">
             <h2> Person State</h2>
             <div class="status_vis_white">
-
+                <h2>Fall detected!</h2>
             </div>
         </section>
     </div>
