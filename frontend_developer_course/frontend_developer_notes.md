@@ -381,4 +381,6 @@ If you want to learn more about this topic you an check the following links:
 
 - [BEM | Platzi Blog](https://platzi.com/blog/bem/)
 
+# Final Project:
 
+You can check the draft of my first frontend project in the practice 18, with the file [home.html](/frontend_developer_course/practice/18_final_project/home.html). The project is a small preview of an idea I had earlier about a robot that can track and monitore elder people, and notifiy if they fall, for now, it is just iamge based, I would like to continue the project along with my learning path in frontend. 
