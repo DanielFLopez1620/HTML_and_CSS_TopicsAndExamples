@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Changing default HTML values*/
+        html{
+            font-size: 100%;
+        }
+
+        /* More tests on size */
+        div {
+            width: 150px; /* Pixels are independent, but they depend on your screen*/
+            height: 150px;
+            background: greenyellow;
+        }
+        p {
+            font-size: 2rem; /* Rem is equivalent to 16 pixels, but this value may vary according HTML style mods */
+        }
+        section {
+            width: 100vw; /* Percentage of view width*/
+            height: 100vh; /* Percentage of view height */
+            background: green;
+        }
+    </style>
+</head>
+<body>
+    <div>Testing size #1</div>
+    <p>Testing size #2</p>
+    <section> Testing size #3</section>
+</body>
+</html>
